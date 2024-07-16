@@ -36,7 +36,8 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.zxing:javase:3.5.2")
+    implementation("com.google.zxing:core:3.5.2")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -46,3 +47,4 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
