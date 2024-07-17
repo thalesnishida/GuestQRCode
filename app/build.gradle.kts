@@ -36,6 +36,10 @@ android {
 }
 
 dependencies {
+    val room_version = "2.6.1"
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+    implementation("com.journeyapps:zxing-android-embedded:4.1.0")
     implementation("com.google.zxing:javase:3.5.2")
     implementation("com.google.zxing:core:3.5.2")
     implementation(libs.androidx.core.ktx)
